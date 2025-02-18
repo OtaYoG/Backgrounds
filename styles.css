@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "orbitron",sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* --BACKGROUND #1-- */
+.bg1 {
+    background: #14032a url(img/bgplus.png) repeat top left;
+}
+
+
+.bg1 h2 {
+    font-size: 5rem;
+    color: #ff00c8;
+    margin-bottom: 10px;
+}
+
+.bg1 a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.bg1 a:hover {
+    color: #ff00c8;
+}
+
+/* --BACKGROUND #2-- */
+
+.bg2 {
+    position: relative; 
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+}
+
+
+.bg2 video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transform: translate(-50%, -50%);
+    z-index: -2; 
+}
+
+
+.bg2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("img/bg_hash.png") repeat;
+    opacity: 2;
+    z-index: -1; 
+}
+
+
+.bg2 h2{
+    font-size: 5rem;
+    color: crimson;
+    margin-bottom: 10px;
+}
+
+.bg2 a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: gold;
+}
+
+.bg2 a:hover {
+    color: crimson;
+}
+/* --BACKGROUND #3-- */
+
+.bg3  {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+
+    /*--copy cola: https://css-pattern.com/3d-wavy/--*/
+
+    --s: 100px; /* control the size*/
+    --c1: #6d30fd;
+    --c2: #001324;
+    
+    --_g: 
+       var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+       var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
+    background:
+      radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
+      radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
+      var(--c1);
+    background-size: var(--s) var(--s);
+  }
+
+.bg3 h2 {
+    font-size: 5rem;
+    color:gold;
+    margin-bottom: 10px;
+}
+
+.bg3 a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color:#ff00c8;
+}
+
+.bg3 a:hover {
+    color: orange;
+}
+/* --BACKGROUND #4-- */
+
+.bg4 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+    /* --copy cola : https://projects.verou.me/css3patterns/#carbon-fibre-- */
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+
+
+.bg4 h2 {
+    font-size: 5rem;
+    color:slategray;
+    margin-bottom: 10px;
+}
+
+.bg4 a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color:slategrey ;
+}
+
+.bg4 a:hover {
+    color:deeppink;
+}
+
+/* --BACKGROUND #5-- */
+
+.bg5 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+    background: radial-gradient(#ff00c8 2px, transparent 2px);
+    background-color: #030120;
+    background-size: 25px 25px;
+}
+
+.bg5 h2  {
+    font-size: 5rem;
+    color:gold;
+    margin-bottom: 10px;
+}
+
+.bg5 p {
+    font-size: 2.5rem;
+    color: gold;
+}
